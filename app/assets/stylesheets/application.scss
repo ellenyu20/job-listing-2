@@ -22,29 +22,36 @@
   //---------Navbar---------
 
    .navbar-default {
-       background-color: #212121;
-       border-color: #212121;
-       margin-bottom: 0;
-       border-radius: 0;
+       background-color: #212121;//背景颜色
+       border-color: #212121; //边框色
+       margin-bottom: 0;//底部margin不撑开距离
+       border-radius: 0;//圆角为0
    }
 
-   .navbar-default .navbar-brand {
-       color: #FFFFFF;
-       padding: 10px 15px;
-       line-height: 30px;
+   .navbar-default .navbar-brand {  //logo字体样式
+       color: #FFFFFF; //字体颜色
+       padding: 10px 15px; //上下10px 左右15px
+       line-height: 30px; //文字行高
    }
 
    .navbar-default .navbar-brand:hover,
    .navbar-default .navbar-brand:focus {
-       color: #C9302C;
-       background-color: transparent;
+       color: #C9302C; //鼠标放置在链接上的文字颜色
+       background-color: transparent; //鼠标放置在链接上的背景颜色
    }
+
+     .navbar-brand > img {
+         display: inline-block; //图片和链接文字显示在同一行
+         margin-right: 10px; //图片和链接文字拉开一点距离
+         width: 32px; //定制图片宽度
+         height: 32px; //定制图片高度
+     }
 
    .navbar-default .navbar-nav > li > a {
        color: #FFFFFF;
    }
 
-   .navbar-default .navbar-nav > li > a:hover,
+   .navbar-default .navbar-nav > li > a:hover, //导航栏链接颜色样式
    .navbar-default .navbar-nav > li > a:focus {
        color: #C9302C;
        background-color: transparent;
